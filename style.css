@@ -120,12 +120,7 @@ img.profile-photo {
 }
 
 /* تسمية الصورة */
-.photo-caption {
-    text-align: center;
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #fff;
-}
+
 
 .portfolio-content {
     padding: 30px;
@@ -177,4 +172,3 @@ footer {
     padding: 15px;
 }
 
-        
