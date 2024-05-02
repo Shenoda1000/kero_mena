@@ -43,51 +43,60 @@
 <!-- إضافة Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
+<!-- قسم معرض الصور -->
+<!-- قسم معرض الصور -->
 <section id="portfolio">
     <div class="container">
         <h2 class="text-center">معرض الصور</h2>
         <div class="row g-4">
-            <!-- العنصر الأول -->
-            <div class="col-12 col-md-4">
-                <div class="portfolio-item">
-                    <img src="image1.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid">
-                    
-                </div>
-            </div>
-            <!-- العنصر الثاني -->
-            <div class="col-12 col-md-4">
-                <div class="portfolio-item">
-                    <img src="image2.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid">
-                    
-                </div>
-            </div>
-            <!-- العنصر الثالث -->
-            <div class="col-12 col-md-4">
-                <div class="portfolio-item">
-                    <img src="image3.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid">
-                    
-                </div>
-            </div>
-        </div>
-        <!-- صف جديد للصورة الرابعة -->
-        <div class="row g-4 justify-content-center">
-            <!-- العنصر الرابع -->
-            <div class="col-12 col-md-4">
-                <div class="portfolio-item">
-                    <img src="image4.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid">
-                    
-                </div>
-            </div>
-          
-            <div class="col-12 col-md-4">
-                <div class="portfolio-item">
-                    <img src="image5.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid">
-                   
+            <!-- صف واحد يحتوي على 6 صور -->
+            <div class="col-12">
+                <div class="row g-4">
+                    <!-- صور في صف واحد -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image1.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image2.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image3.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image4.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image5.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="portfolio-item">
+                            <img src="image6.jpg" alt="صورة من أعمال Kero Mena" class="img-fluid portfolio-photo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- CSS لضمان نفس العرض والارتفاع لجميع الصور -->
+<style>
+.portfolio-photo {
+    width: 200px; /* العرض المطلوب للصور */
+    height: 200px; /* الارتفاع المطلوب للصور */
+    object-fit: fill; /* يملأ الصورة بالكامل داخل العنصر حتى لو أدى إلى تشويه */
+}
+</style>
 
     <!-- قسم التواصل -->
     <section id="contact">
@@ -122,4 +131,4 @@
 </html>
 
 <!-- إعدادات CSS -->
-        
+                                
