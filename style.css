@@ -16,15 +16,15 @@ a {
 a:hover {
     color: #0056b3;
 }
-/* تنسيق الهيدر */
+
 /* تنسيق الهيدر */
 header {
     background-color: #343a40;
     padding: 15px;
     text-align: center;
     display: flex;
-    justify-content: center; /* لمحاذاة العناصر في الوسط أفقيًا */
-    align-items: center; /* لمحاذاة العناصر في الوسط رأسيًا */
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul {
@@ -32,32 +32,25 @@ header nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* لتوزيع العناصر بالتساوي عبر القائمة */
-    align-items: center; /* لمحاذاة العناصر في الوسط */
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul li {
-    margin: 0 10px; /* الفجوة بين العناصر */
+    margin: 0 10px;
 }
 
 header a {
     color: #fff;
     font-weight: bold;
-    padding: 5px 10px; /* إضافة مسافة حول الروابط */
+    padding: 5px 10px;
 }
 
 header a:hover {
     color: #ccc;
 }
 
-#home {
-  margin-bottom: 15px;
-}
-
-
 /* قسم الصورة الرئيسية */
-
-
 .hero-section {
     text-align: center;
     padding: 50px;
@@ -65,14 +58,9 @@ header a:hover {
     color: #fff;
 }
 
-/* اجعل الخلفية تغطي كامل القسم */
-
-
-
 img.profile-photo {
     border-radius: 10px;
     width: 200px;
-    
 }
 
 .hero-content h1, .hero-content h2 {
@@ -89,52 +77,49 @@ img.profile-photo {
 
 .cta-button:hover {
     background-color: #fff;
-    color: #007bff; /* لون النص يصبح أزرق فاتح */
+    color: #007bff;
     transition: background-color 0.5s, color 0.5s;
 }
 
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    justify-content: center; /* توسيط الشبكة */
+/* قسم معرض الصور */
+#portfolio {
+    padding: 50px 0;
 }
 
-/* تحديد بعض خصائص العناصر في الشبكة */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h2.text-center {
+    margin-bottom: 30px;
+}
+
+/* تعديل المحاذاة والمساسافة في معرض الصور */
 .portfolio-item {
     border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 5px;
     overflow: hidden;
-    border-radius: 5px;
-    margin: 15px auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s;
-    width: 90%;
-}
-
-.portfolio-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* تسمية الصورة */
-
-
-.portfolio-content {
-    padding: 30px;
-    text-align: center;
-}
-
-.portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    margin: 10px;
 }
 
 .portfolio-item:hover {
     transform: scale(1.05);
+}
+
+img.portfolio-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* CSS */
+.portfolio-photo {
+    width: 200px; /* العرض المطلوب للصور */
+    height: 200px; /* الارتفاع المطلوب للصور */
+    object-fit: fill; /* يملأ الصورة بالكامل داخل العنصر */
 }
 /* قسم التواصل */
 .contact-content {
@@ -170,5 +155,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px;
-}
-
+    }
